@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <title>HTML GEN 2</title>
+</head>
+<body>
+    <article class="element">
+        <div id="move-element-tool">
+            <div class="element-tool" begin>
+                <div class="title-container">
+                    <h1 id="element-placement" class="title">ELEMENT <span>Tool</span></h1>
+                    <img id="angle" src="img/angle.svg" alt="" begin>
+                    <div class="title-separation"></div>
+                    <div id="btn-more-tool">
+                        <img src="img/plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="element-title-separation"></div>
+                <div id="all-elements"></div>
+            </div> 
+        </div>  
+    </article>
+    <article id="position">
+        <div>
+            <section id="position-menu-opener">
+                <div class="title-and-angle">
+                    <div class="title">
+                        <h2 id="position-move" >Position <span>Tool</span></h2>
+                    </div>
+                    <div id="pos-angle">
+                        <img id="pos-angle-img" src="./img/angle.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="position-interface" block>
+                <div class="contain-elem-and-padding flex">
+                    <div class="contain-elem vertical-padding"></div>
+
+                    <div class="pos-if-center">
+                        <div class="contain-elem horizon-padding"></div>
+
+                        <div class="contain-elem-container">
+                            <div id="top-position-elems-container"></div>
+                            <div id="position-elems-container">
+                                <!--
+                                    <div id="element-1"></div>
+                                    <div id="element-2"></div>
+                                    <div id="element-3"></div>
+                                    <div id="element-4"></div>
+                                -->
+                            </div>
+                            <div id="under-position-elems-container"></div>
+                        </div>
+
+                        <div class="contain-elem horizon-padding"></div>
+                    </div>
+
+                    <div class="contain-elem vertical-padding"></div>
+                </div>
+            </section>
+        </div>
+        <section id="position-menu" base>
+            <ul id="pos-menu-content" inactive>
+                <div class="flex pos-base-menu-1">
+                    <li class="pos-menu-btn" id="basic-pos-select" pos="basic"><h3>basic</h3></li>
+                    <li class="pos-menu-btn" id="flex-pos-select" pos="flex"><h3>flex</h3></li>
+                    <li class="pos-menu-btn" id="grid-pos-select" pos="grid"><h3>grid</h3></li>
+                    <li class="pos-menu-btn pos-menu-base-btn-2" id="size-pos-select" pos="size"><h3>size</h3></li>
+                    <li class="pos-menu-btn pos-menu-base-btn-2" id="free-pos-select" pos="free"><h3>free</h3></li>
+                </div>
+            </ul>
+        </section>
+    </article>
+    <article class="code-gen"></article>   
+    <script src="./scripts/var-glob.js" defer></script>
+    <script src="./scripts/elem-tool.js" defer></script>
+    <script src="./scripts/windows-anim.js" defer></script>
+    <script src="./scripts/position-tool.js" defer></script>
+</body>
+</html>

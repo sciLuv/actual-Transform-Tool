@@ -350,8 +350,11 @@ function createColor(){
         let ColorModNum = i;
         let opaNum = (ColorModNum*4);
     
+        let beforColor = Math.floor(Math.random() * 16777215).toString(16);
+        let colorElem = "#" + ("000000" + beforColor).slice(-6);
+
         colorModList[ColorModNum] = {
-            hue : "#009DFF",
+            hue : colorElem,
             opacity : 100
         }
         colors[ColorModNum].addEventListener("input", function(){
@@ -386,7 +389,7 @@ for(i=0; i<= elements.length-1; i++){
         interuptorBB : false
     }
 
-    //représente l'option selectionné du select de style de bordure
+    //représente l'option selectionné du select de style de bordure.
     let selectedStyle = borderStyles[borderModNum].options[borderStyles[borderModNum].selectedIndex];
 
     //objet qui contient l'ensemble des info de style de chacune des bordures.
@@ -1966,6 +1969,8 @@ moreElementBtn.addEventListener("click", function(){
             sizeIFList.splice(i, 1, saveSizeIFList[i]);
         }
         createSize();
+        //body.removeEventListener("mousemove", placeMove);
+        //body.removeEventListener("mouseup", placeEndMove);
         createPlacement();
         //visual change for the new element list
         for (i=0; i<=elemList.length-1; i++){
